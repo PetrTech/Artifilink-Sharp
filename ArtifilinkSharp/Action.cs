@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Input;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,23 +9,13 @@ namespace ArtifilinkSharp
 {
     class Action
     {
-        public enum setActionType {
-            keyPress,
-            moveMouse,
-            lmbMouse,
-            rmbMouse,
-            mmbMouse,
-            integer,
-            text,
-            floatingPoint
-        };
+        public enum actionType { integer, text, floatingPoint }; actionType currentActionType;
 
-        public setActionType actionType;
+        public dynamic actionValue;
 
-        // key press
-        public Action()
+        public Action(actionType actionType, dynamic value)
         {
-
+            actionValue = value;
         }
     }
 }
