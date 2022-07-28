@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ArtifilinkSharp
 {
-    class Action
+    public class Action
     {
         public enum actionType { integer, text, floatingPoint }; actionType currentActionType;
 
