@@ -88,6 +88,7 @@ namespace ArtifilinkSharp
     public class MiddleNeuron
     {
         public float currentWeight = 0;
+        public dynamic connection;
 
         public MiddleNeuron(float weight)
         {
